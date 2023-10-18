@@ -1,0 +1,165 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	height: 250px;
+	width: 300px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.border {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: linear-gradient(
+		270deg,
+		#ff0000,
+		#ff8900,
+		#ffe300,
+		#50ff00,
+		#00ffdf,
+		#0081ff,
+		#6b00ff,
+		#d000ff,
+		#ff00d4
+	);
+	background-size: 1800%;
+	-webkit-animation: gradChange 30s ease infinite;
+	-moz-animation: gradChange 30s ease infinite;
+	animation: gradChange 30s ease infinite;
+}
+
+@-webkit-keyframes gradChange {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes gradChange {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradChange {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.overlay {
+	position: relative;
+	float: left;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	width: 125px;
+	height: 125px;
+	background: transparent;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.performer {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+	border-radius: 50%;
+	border: 4px solid #000000;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.performer img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fullscreen {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+}
+
+.ie-fix {
+	display: none;
+}
+
+@keyframes flash {
+	50% {
+		opacity: 0;
+	}
+}
+
+.view {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	color: #c6c6c6;
+	position: absolute;
+	z-index: 3;
+	font-family: sans-serif;
+	font-weight: 700;
+	text-align: center;
+	display: block;
+	bottom: 3px;
+	left: 34%;
+	padding: 2px 4px;
+	font-size: 16px;
+}
