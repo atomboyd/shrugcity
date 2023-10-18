@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "13.5.x",
     "react": "latest",
     "react-dom": "latest",
     "vercel": "latest"
